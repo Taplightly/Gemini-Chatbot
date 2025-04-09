@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAMRIA Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!--main-->
+    <button class="chatbot-toggler">
+      <img
+        id="chat_open"
+        class="chatbot_open"
+        src="/images/messageBtn.png"
+        alt="Open Chat"
+      />
+      <img
+        id="chat_close"
+        class="chatbot_close"
+        src="/images/closeBtn.png"
+        alt="Close Chat"
+      />
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>NAMRIA Chatbot</h2>
+        <button class="close-btn">&times;</button>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <img
+            id="bot_icon"
+            class="chatbot_icon"
+            src="/images/logoNamria.png"
+            alt="Bot Icon"
+          />
+          <p>I'm the NAMRIA Chatbot. <br />How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea
+          placeholder="Type your message here..."
+          required
+          spellcheck="false"
+        ></textarea>
+        <button class="btn-send">Send</button>
+      </div>
+    </div>
+  </body>
+</html>
