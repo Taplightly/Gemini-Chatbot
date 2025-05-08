@@ -14,12 +14,12 @@ const createChatLi = (message, className) => {
   // Create chat <li> element with passed message and className
   const chatLi = document.createElement("li");
   chatLi.classList.add("chat", className);
-  let chatContent =
+  let chatContent = 
     className === "outgoing"
       ? `<p></p>`
-      : `<img id = "bot_icon" class = "chatbot_icon" src = "/images/logoNamria.png" alt ="Bot Icon"><p></p>`;
+      : `<img id = "bot_icon" class = "chatbot_icon" src = "images/logoNamria.png" alt ="Bot Icon"><p></p>`;
   chatLi.innerHTML = chatContent;
-  chatLi.querySelector("p").textContent = message;
+  chatLi.querySelector("p").textContent = message; 
   return chatLi;
 };
 
@@ -77,7 +77,7 @@ Now answer this question: "${userMessage}"
 };
 
 const handleChat = () => {
-  userMessage = chatInput.value.trim();
+  userMessage = chatInput.value.trim(); 
   if (!userMessage) return;
   chatInput.value = "";
   chatInput.style.height = `${inputInitHeight}px`;
@@ -108,7 +108,7 @@ chatInput.addEventListener("keydown", (e) => {
     e.preventDefault();
     handleChat();
   }
-});
+}); 
 
 chatbotToggler.addEventListener("click", () =>
   document.body.classList.toggle("show-chatbot")
