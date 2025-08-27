@@ -1,31 +1,23 @@
-<!-- Declares the document type and HTML version -->
 <!DOCTYPE html>
 
-<!-- Opens the HTML document with language set to English and text direction left-to-right -->
 <html lang="en" dir="ltr">
 
   <head>
-    <!-- Character encoding set to UTF-8 (supports most characters) -->
     <meta charset="UTF-8" />
 
-    <!-- Responsive design: sets viewport width to match device width and initial zoom level -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Title shown on the browser tab -->
     <title>NAMRIA Chatbot</title>
 
-    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Link to external JavaScript file, loaded after HTML is parsed -->
     <script src="script.js" defer></script>
   </head>
 
   <body>
-    <!-- Button that toggles (shows/hides) the chatbot interface -->
+
     <button class="chatbot-toggler">
 
-      <!-- Icon shown when chatbot is closed (chat/message button) -->
       <img
         id="chat_open"
         class="chatbot_open"
@@ -33,7 +25,6 @@
         alt="Open Chat"
       />
 
-      <!-- Icon shown when chatbot is open (close or 'X' button) -->
       <img
         id="chat_close"
         class="chatbot_close"
@@ -42,25 +33,19 @@
       />
     </button>
 
-    <!-- Main container for the chatbot interface -->
     <div class="chatbot">
 
-      <!-- Chatbot header with title and close button -->
       <header>
-        <!-- Title of the chatbot interface -->
+
         <h2>NAMRIA Chatbot</h2>
 
-        <!-- Optional close button (× symbol), useful on mobile -->
         <button class="close-btn">&times;</button> 
       </header>
 
-      <!-- Container for chat messages -->
       <ul class="chatbox">
 
-        <!-- First message shown in the chat from the bot -->
         <li class="chat incoming">
 
-          <!-- Chatbot's logo -->
           <img
             id="bot_icon"
             class="chatbot_icon"
@@ -68,24 +53,21 @@
             alt="Bot Icon"
           />
 
-          <!-- Welcome message from the bot -->
           <p>I'm the NAMRIA Chatbot. <br />How can I help you today?</p>
         </li>
       </ul>
 
-      <!-- Input area for user messages -->
       <div class="chat-input">
         
-        <!-- Textarea for user to type message; 'required' ensures message isn't empty; disable browser spellchecking-->
         <textarea
           placeholder="Type your message here..."
           required
           spellcheck="false" 
         ></textarea>
 
-        <!-- Send button that submits the user’s message -->
         <button class="btn-send">Send</button>
       </div>
     </div>
   </body>
 </html>
+
